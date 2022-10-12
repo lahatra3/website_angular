@@ -9,7 +9,7 @@ export const first = [
     },
     {
         image: 'first-3.png',
-        label: "5600 utilisateurs dans 8 ans"
+        label: "56000 utilisateurs dans 8 pays"
     },
     {
         image: 'first-4.jpeg',
@@ -39,14 +39,14 @@ export const produits = [
 export const offres = [
     {
         image: 'first-1.jpeg',
-        label: "5 ans de R&D en France"
+        label: "1 Euro soit 650 Fcfa/jour"
     },
     {
         image: 'first-2.jpeg',
-        label: "Leader du LIFI en Afrique"
+        label: "5 Euro soit 3250 Fcfa/semaine"
     },
     {
         image: 'first-4.jpeg',
-        label: "95% de taux de réabonnement"
+        label: "15 Euro soit 9750 Fcfa/mois"
     } 
 ];
