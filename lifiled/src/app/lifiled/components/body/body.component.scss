@@ -40,11 +40,20 @@ nav {
 
 footer {
     background-color: #001e58de !important;
+    color: #fff;
     ul > * {
         color: #fff !important;
         border: none !important;
     }
     ul li {
         background-color: #00000000 !important;
+    }
+    #social_network ul li {
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover {
+            font-weight: bold;
+            transform: translate(1%, -1%);
+        }
     }
 }
