@@ -25,17 +25,29 @@ a.nav-link {
     }
 }
 
+.active_menu {
+    &::after {
+        content: '';
+        display: block !important;
+        width: 0;
+        height: 2px;
+        background-color: #ffffff;
+        width: 100% !important;
+    }
+}
+
 nav {
-    background-color: #000f2e3b !important;
+    background-color: #000f2e27 !important;
     transition: all .5s ease !important;
 }
 
 #navigation {
-    transition: all .3s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 
 .navigationScroll {
     background-color: #030f2c !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 footer {
@@ -55,5 +67,14 @@ footer {
             font-weight: bold;
             transform: translate(1%, -1%);
         }
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .offcanvas {
+        background-color: #030f2c !important;
+        width: 90% !important;
+        border-bottom-right-radius: 2rem;
+        border-top-right-radius: 2rem;
     }
 }
