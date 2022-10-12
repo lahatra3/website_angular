@@ -1,0 +1,156 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-5 py-4"></div>
+        <div class="col-12 my-5 py-4"></div>
+    </div>
+    <div class="row justify-content-center my-5">
+        <div class="col-12 col-md-8 shadow rounded-3 px-2" 
+            id="texte_accueil">
+            <div class="fs-1 fw-bold text-start">
+                Lifi pour eclairer AFRIQUE,
+            </div>
+            <div class="m-2 p-2"></div>
+            <div class="fs-1 fw-bold text-end">
+                Lifi pour connecter AFRIQUE.
+            </div>
+            <div class="m-2 p-2"></div>
+            <figcaption class="blockquote-footer text-center">
+                L'espoir crée la lumière dans l'obscurité, <cite title="Source Title">Lifiled</cite>
+            </figcaption>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="section_video">
+    <div class="row">
+        <div class="col-12 p-0">
+            <div class="container">
+                <div class="row py-3 px-2 m-2 align-items-center justify-content-around">
+                    <div class="col-md-6 col-12">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/N_G2JRTz7fE" 
+                                title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-12 rounded-3 text-light">
+                        <div class="fs-1 fw-bold ms-4" style="color: #001e67e0;">Lifiled</div>
+                        <div id="text_video" class="fs-5">
+                            Créée en 2014,<br>
+                            LIFILED est une startup spécialisée dans 
+                            la transmission de données par la lumière.
+                            Grâce à sa solution trois (3) en 1, elle 
+                            permet d'éclairer les zones reculées, de 
+                            les connecter à internet grâce à la technologie 
+                            du LIFI, l'internet par la lumière et la mise à 
+                            disposition de contenus dynamiques pour l'éducation 
+                            et pour le contenu agricole.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="section_first">
+    <div class="row">
+        <div class="col-12 p-0">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-4 g-3 py-3 px-2 m-2">
+                    <div class="col" *ngFor="let data of first_list">
+                        <div class="card h-100 shadow" style="border: none;">
+                            <img [src]="'assets/images/' + data.image" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text text-center fs-5">
+                                    {{ data.label }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="section_second">
+    <div class="row py-3">
+        <div class="col-12 p-0">
+            <div class="container">
+                <div class="card mb-3 my-4" style="border-color: rgb(235, 235, 235);">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-6">
+                            <img src="assets/images/second.jpeg" class="img-fluid rounded-start" 
+                                alt="first">
+                        </div>
+                        <div class="col-md-6 px-3">
+                            <div class="card-body">
+                                <h5 class="card-title fs-1 fw-bold text-center" style="color: #001e67e0;">Notre vision</h5>
+                                <p class="card-text fs-5">
+                                    Eclairer les villes et les villages africaines 
+                                    afin de les interconnecter, telle est
+                                    notre vision, pour l'avenir de l'Afrique.
+                                </p>
+                                <p class="card-text">
+                                    <figcaption class="blockquote-footer text-center">
+                                        <cite title="Source Title">Monsieur BALMA</cite>
+                                    </figcaption>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="section_produit">
+    <div class="row py-3">
+        <div class="col-12 p-0">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-12 fw-bold text-center fs-1" style="color: #fff;">Nos produits</div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-4 g-3 py-3 px-2">
+                    <div class="col" *ngFor="let data of produits_list">
+                        <div class="card h-100 shadow" style="border: none;">
+                            <img [src]="'assets/images/' + data.image" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">{{ data.label }}</h5>
+                                <p class="card-text text-end pt-4">
+                                    <button class="btn" 
+                                        style="color: #fff; background-color: #002270d7;">Voir plus</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="section_offre">
+    <div class="row py-3">
+        <div class="col-12 p-0">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-12 fw-bold text-center fs-1" style="color: #001e67e0;">Nos offres</div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 py-2 px-2">
+                    <div class="col" *ngFor="let data of offres_list">
+                        <div class="card shadow" style="border: none;">
+                            <img [src]="'assets/images/' + data.image" class="card-img">
+                            <div class="card-img-overlay">
+                                <p class="card-text fs-5 position-absolute rounded-1 px-1 shadow"
+                                    style="background-color: #fff; bottom: 3%;">
+                                    {{ data.label }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

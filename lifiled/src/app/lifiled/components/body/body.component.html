@@ -1,0 +1,74 @@
+<header id="navigation" class="shadow rounded-bottom">
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" routerLink="/accueil">
+                <img src="assets/images/logo.png" alt="Lifiled"
+                    class="img-fluid" width="111">
+            </a>
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" 
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="assets/images/logo.png" alt="Lifiled" 
+                            class="img-fluid" width="111">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" 
+                        aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item mx-2" *ngFor="let data of navMenu">
+                        <a class="nav-link fw-bold fs-6" [routerLink]="data.route">
+                            {{ data.label | titlecase }}
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+</header>
+<section>
+    <div class="m-4 p-3"></div>
+    <router-outlet></router-outlet>
+</section>
+<footer class="pt-5 pb-4 rounded-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="">
+                    <img src="assets/images/logo.png" alt="Lifiled"
+                        class="img-fluid" width="111">
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex align-items-center">
+                        <span class="material-symbols-outlined mx-2">
+                            local_post_office
+                        </span>
+                        <span class="fw-bold">28 BP 942 Abidjan 28</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <span class="material-symbols-outlined mx-2">
+                            home_pin
+                        </span>
+                        <span class="fw-bold">Cocody Riviera Palmeraie, Abidjan, Côte d'Ivoire</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <span class="material-symbols-outlined mx-2">
+                            call
+                        </span>
+                        <span class="fw-bold">+225 07 07 28 81 81 / +225 07 07 90 44 00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4"></div>
+            <div class="col-12 col-md-4"></div>
+        </div>
+    </div>
+</footer>
